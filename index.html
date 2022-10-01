@@ -82,10 +82,42 @@
 .cxwgnw {
     font-size: 16px;
 }
+.vertical-menu {
+  width: 1575px; /* Set a width if you like */
+  text-align: center;
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: rgb(95, 32, 32); /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
     </style>
   </head>
 
-  <body style="background-color: rgb(218, 205, 224);">
+  <body style="background-color: rgba(218, 205, 224, 0.5);">
+    <div class="vertical-menu">
+        <a href="#" class="active">lab list</a>
+        <a href="#" >Lab 1</a>
+        <a href="#" >Lab 2</a>
+        <a href="#" >Lab 3</a>
+        <a href="#" >Lab 4</a>
+        <a href="#" >Lab 5</a>
+        <a href="#" >Lab 6</a>
+        <a href="#" >Lab 7</a>
+        <a href="#" >Lab 8</a>
+      </div>    
     <div class="container">
       <div class="sc-bdfBwQ eZNKTD">
         <img src="https://d1fdloi71mui9q.cloudfront.net/iOzJNxCLR8WmkeOYLpQ2_6Zp9332eS0bZjV4b" alt="" role="presentation" data-testid="ProfileImage" class="sc-iBPRYJ flTywP Header__StyledProfilePicture-sc-x93kmr-1" filter="none">
@@ -152,6 +184,6 @@
                       </div>
                     </a>
                   </div>
-                </div>  
+                </div>      
   </body>
 </html>
