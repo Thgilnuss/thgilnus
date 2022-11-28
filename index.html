@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Thgilnus shop</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="icon" type="image/x-icon" href="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.15752-9/315109286_1302119170550999_5255581491286488093_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=RiDag9GNecEAX-9m1O6&_nc_ht=scontent-hkt1-2.xx&oh=03_AdS39wmv0VBOEXaJSfw3naRrRz240W_qNahfU9t7ygv01Q&oe=63AAAC8D">
-    </head>
-    <body>
-        <div id>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thgilnus shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.15752-9/315109286_1302119170550999_5255581491286488093_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=RiDag9GNecEAX-9m1O6&_nc_ht=scontent-hkt1-2.xx&oh=03_AdS39wmv0VBOEXaJSfw3naRrRz240W_qNahfU9t7ygv01Q&oe=63AAAC8D">
+</head>
+<body>
+    <div>
+        <button class="bt-menu">
             <ul>
-                <li><a href="#home"><img src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/316903177_1335080473988152_6427250653529427652_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=hwQvCGACzYwAX-Lpz01&_nc_ht=scontent-sin6-3.xx&oh=03_AdTXAVTBXq36axrVObiaboRhKZk2Hfgq8NJ8hcNeqlfRxQ&oe=63846550" alt="HTML tutorial" style="background-color:rgba(243, 234, 223, 0.8) ;width:90px;height:90px; margin-right: 50px;"></a></li>
-                <div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">New</a></li>
-                <li class="drop">
-                    <a class="dropbt" href="#home">Product</a>
-                        <div class="drop-content">
-                            <a href="#">Shoes</a>
-                            <a href="#">Clothes</a>
-                            <a href="#">Technology Products</a>
-                        </div>
+                <li><a href="#"><img
+                            src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.15752-9/316903177_1335080473988152_6427250653529427652_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=hwQvCGACzYwAX-Lpz01&_nc_ht=scontent-sin6-3.xx&oh=03_AdTXAVTBXq36axrVObiaboRhKZk2Hfgq8NJ8hcNeqlfRxQ&oe=63846550"
+                            alt="HTML tutorial"
+                            style="background-color:rgba(243, 234, 223, 0.8) ;width:90px;height:90px; margin-right: 40px;"></a>
                 </li>
-                <li><a href="#home">About us</a></li>
-                <li><a href="#home">Help</a></li>
-                <input type="text" onkeyup="myFunction()" placeholder="Search..." title="Type in a category">
-            </div>
+                <div>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">New</a></li>
+                    <li class="drop">
+                        <a class="dropbt" href="#home">Product</a>
+                        <div class="drop-content">
+                            <a style="cursor:pointer;" onclick="scrollToShoes()">Shoes</a>
+                            <a href="#home">Clothes</a>
+                            <a style="cursor:pointer;" onclick="scrollToTechs()">Technology Products</a>
+                        </div>
+                    </li>
+                    <li><a href="#home">About us</a></li>
+                    <li><a href="#home">Help</a></li>
+                    <input type="text" onkeyup="myFunction()" placeholder="Search..." title="Type in a category">
+                </div>
             </ul>
-        </div>
-        <br>
-        <h1>New Products</h1>
-        <div class="new-products">
-                <button>
-                    <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a358bcd5e3d453da815aad6009a249e_9366/superstar-shoes.jpg" alt="Giay adidas"> 
-                    <p class="name">Superstar shoes</p>
-                    <p class="type">type: Originals</p>
-                    <p class="price">Price: 2.500.000₫</p>
-                </button>
-                <button>
-                    <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac706d8555244a6e8ea7ac1e00f521d1_9366/stan-smith-shoes.jpg" alt="Giay adidas 1">    
-                    <p class="name">Stan Smith Shoes</p>
-                    <p class="type">type: Originals</p>
-                    <p class="price">Price: 2.000.000₫</p>
-                </button>
-                <button>    
-                    <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/ceec94ff45ea4cb9a1c6acb6001bf4ad_9366/forum-low-shoes.jpg" alt="Giay adidas 2">
-                    <p class="name">Forum Low Shoes</p>
-                    <p class="type">type: Originals</p>
-                    <p class="price">Price: 1.900.000₫</p>
-                </button>
-        </div>
-        <br>
-        <div class="new-products">
-            <button style="background-color:#ffffff;" class="imgg">
-                <img src="https://product.hstatic.net/1000026716/product/sony-ps5_4cd29cf31c794b42b68aff9c67487d73_large.jpg" alt="PS5" width="383" height="383"> 
-                <p class="name">Sony Playstation 5 Standard Edition</p>
-                <p class="type">type: Gaming</p>
-                <p class="price">Price: 16.990.000₫</p>
-            </button>
-            <button style="background-color:#ffffff;">
-                <img src="https://product.hstatic.net/1000026716/product/rog-strix-rtx4080-o16g-01_0baf9d048c8349efa7f12021a117a0c0_large.jpg" alt="RTX 4080" width="383" height="383">    
-                <p class="name">ASUS ROG Strix GeForce RTX 4080 OC Edition</p>
-                <p class="type">type: GPU</p>
-                <p class="price">Price: 44.990.000₫</p>
-            </button >
-            <button style="background-color: #ffffff;">    
-                <img src="https://product.hstatic.net/1000026716/product/dell_aw3821dw_gearvn_d3c4f212373145dba5f120c862b45609_large.jpg" alt="Dell alien" width="383" height="383">
-                <p class="name">Dell Alienware AW3821DW</p>
-                <p class="type"> type: Screen</p>
-                <p class="price">Price: 33.990.000₫</p>
-            </button>
+        </button>
+    </div>
+    <br>
+    <h1> <br> New Products</h1>
+    <div class="new-products" id="new-products-shoe">
+        <button>
+            <img onmouseover="changePic1()" onmouseout="changePic2()" id="myImg"
+                src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8d3ab16a86e64571b405aad600bad099_9366/superstar-shoes.jpg"
+                alt="Giay adidas">
+            <p class="name">Superstar shoes</p>
+            <p class="type">type: Originals</p>
+            <p class="price">Price: 2.500.000₫</p>
+        </button>
+        <button>
+            <img onmouseover="changePic3()" onmouseout="changePic4()" id="myImg1"
+                src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4e8ad905b6b446b896a3ac1e01049147_9366/stan-smith-shoes.jpg"
+                alt="Giay adidas 1">
+            <p class="name">Stan Smith Shoes</p>
+            <p class="type">type: Originals</p>
+            <p class="price">Price: 2.000.000₫</p>
+        </button>
+        <button>
+            <img onmouseover="changePic5()" onmouseout="changePic6()" id="myImg2"
+                src="https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/ca6eb69651d94083889cacb60018d8bb_9366/forum-low-shoes.jpg"
+                alt="Giay adidas 2">
+            <p class="name">Forum Low Shoes</p>
+            <p class="type">type: Originals</p>
+            <p class="price">Price: 1.900.000₫</p>
+        </button>
+    </div>
+    <br>
+    <div class="new-products" id="new-products-tech">
+        <button style="background-color:#ffffff;" class="imgg">
+            <img src="https://product.hstatic.net/1000026716/product/sony-ps5_4cd29cf31c794b42b68aff9c67487d73_large.jpg"
+                alt="PS5">
+            <p class="name">Sony Playstation 5 Standard Edition</p>
+            <p class="type">type: Gaming</p>
+            <p class="price">Price: 16.990.000₫</p>
+        </button>
+        <button style="background-color:#ffffff;">
+            <img src="https://product.hstatic.net/1000026716/product/rog-strix-rtx4080-o16g-01_0baf9d048c8349efa7f12021a117a0c0_large.jpg"
+                alt="RTX 4080">
+            <p class="name">ASUS ROG Strix GeForce RTX 4080 OC Edition</p>
+            <p class="type">type: GPU</p>
+            <p class="price">Price: 44.990.000₫</p>
+        </button>
+        <button style="background-color: #ffffff;">
+            <img src="https://product.hstatic.net/1000026716/product/dell_aw3821dw_gearvn_d3c4f212373145dba5f120c862b45609_large.jpg"
+                alt="Dell alien">
+            <p class="name">Dell Alienware AW3821DW</p>
+            <p class="type"> type: Screen</p>
+            <p class="price">Price: 33.990.000₫</p>
+        </button>
     </div>
     <script>
-        window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("menu").style.top = "0";
-  } else {
-    document.getElementById("menu").style.top = "-50px";
-  }
-}
+        function changePic1() {
+            document.getElementById("myImg").src = "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a358bcd5e3d453da815aad6009a249e_9366/superstar-shoes.jpg";
+        }
+        function changePic2() {
+            document.getElementById("myImg").src = "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/8d3ab16a86e64571b405aad600bad099_9366/superstar-shoes.jpg";
+        }
+        function changePic3() {
+            document.getElementById("myImg1").src = "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/ac706d8555244a6e8ea7ac1e00f521d1_9366/stan-smith-shoes.jpg";
+        }
+        function changePic4() {
+            document.getElementById("myImg1").src = "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4e8ad905b6b446b896a3ac1e01049147_9366/stan-smith-shoes.jpg";
+        }
+        function changePic5() {
+            document.getElementById("myImg2").src = "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/ceec94ff45ea4cb9a1c6acb6001bf4ad_9366/forum-low-shoes.jpg";
+        }
+        function changePic6() {
+            document.getElementById("myImg2").src = "https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/ca6eb69651d94083889cacb60018d8bb_9366/forum-low-shoes.jpg";
+        }
+        const element = document.getElementById("new-products-tech");
+        const element1 = document.getElementById("new-products-shoe")
+        function scrollToTechs() {
+            element.scrollIntoView(true);
+        }
+        function scrollToShoes() {
+            element1.scrollIntoView(true)
+        }
     </script>
-    </body>
+</body>
+
 </html>
