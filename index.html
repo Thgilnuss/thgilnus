@@ -1,49 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <title>my information</title>
-</head>
-<body>
-<div class="menu">
-    <ul>
-        <li><a href = "#">Home</a></li>
-        <li><a>Information</a></li>
-        <li>Labs list</li>
-        <div class="lab-list">
-            <a href="#">
-                Lab 1
-            </a>
-            <a href="#">
-                Lab 2
-            </a>
-            <a href="#">
-                Lab 3
-            </a>
-            <a href="#">
-                Lab 4
-            </a>
-            <a href="#">
-                Lab 5
-            </a>
-            <a href="#">
-                Lab 6
-            </a>
-            <a href="#">
-                Lab 7
-            </a>
-            <a href="#">
-                Lab 8
-            </a>
-            <a href="#">
-                Lab 9
-            </a>
-            <a href="#">
-                Lab 10
-            </a>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>my Information</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon"
+            href="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.15752-9/315109286_1302119170550999_5255581491286488093_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=RiDag9GNecEAX-9m1O6&_nc_ht=scontent-hkt1-2.xx&oh=03_AdS39wmv0VBOEXaJSfw3naRrRz240W_qNahfU9t7ygv01Q&oe=63AAAC8D">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div class="div-menu">
+            <button class="bt-menu">
+                <ul>
+                    <li><a href="#"><img
+                                src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.15752-9/316903177_1335080473988152_6427250653529427652_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=oadQFzkKhqQAX9QuaHl&tn=UgqryMBDTlJAr2Py&_nc_ht=scontent.fsgn13-2.fna&oh=03_AdT4qO204GEOncnypCdLMbsjiNXzucLFoMyiFomL2N_Rbw&oe=63AD0B90"
+                                alt="HTML tutorial"
+                                style="background-color:rgba(243, 234, 223, 0.8) ;width:90px;height:90px; margin-right: 40px;"></a>
+                    </li>
+                    <div>
+                        <li><a href="#">Home</a></li>
+                        <li><a style="cursor:pointer;" onclick="scrollToInfor()">my Information</a></li>
+                        <li><a href="https://thgilnuss.github.io/shop">my Project</a></li>
+                        <li><a style="cursor:pointer;" onclick="scrollToLorem()">just Lorem</a></li>
+                        <li class="drop">
+                            <a class="dropbt" href="#home">Labs list</a>
+                            <div class="drop-content">
+                                <a href="#">Lab 1</a>
+                                <a href="https://thgilnuss.github.io/bt1/">Lab 2</a>
+                                <a href="#">Lab 3</a>
+                                <a href="https://thgilnuss.github.io/bt4/">Lab 4</a>
+                                <a href="https://thgilnuss.github.io/bt5/">Lab 5</a>
+                                <a href="#">Lab 6</a>
+                                <a href="https://thgilnuss.github.io/thgilnus/">Lab 7</a>
+                                <a href="https://thgilnuss.github.io/shop/">Lab 8</a>
+                                <a href="#">Lab 9</a>
+                                <a href="#">Lab 10</a>
+                                <a href="#">Lab 11</a>
+                                <a href="#">Lab 12</a>
+                                <a href="#">Lab 13</a>
+                                <a href="#">Lab 14</a>
+                                <a href="#">Lab 15</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </button>
         </div>
-    </ul>
-</div>
-</body>
+        <br>
+        <div id="infor" class="infor">
+            <img src="https://f8-zpcloud.zdn.vn/2590432732606985562/96409351599180cfd980.jpg" alt="just tam hinh">
+            <div class="text-infor">
+                <p>Name: Nguyen Van Minh Hai</p>
+                <p>Gender: Male</p>
+                <p>Age: 20</p>
+                <p>Studying at Dalat University</p>
+                <span class="material-symbols-outlined">
+                    phone<p style="font-family: 'Courier New', Courier, monospace;"> 0865788888</p>
+                </span>
+                <br>
+                <span class="material-symbols-outlined">
+                    mail<p style="font-family: 'Courier New', Courier, monospace;"> 2110092@dlu.edu.vn</p>
+                </span>
+                <br>
+                <a href="https://facebook.com/thgilnus/"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                    alt="HTML tutorial" 
+                    style="width:23px;height:23px; border-radius: 50%;">
+                </a>
+                <span class="material-symbols-outlined">
+                    <a style="text-decoration: none;" href="https://www.google.com/maps/place/1+%C4%90%C6%B0%E1%BB%9Dng+Ph%C3%B9+%C4%90%E1%BB%95ng+Thi%C3%AAn+V%C6%B0%C6%A1ng,+Ph%C6%B0%E1%BB%9Dng+8,+Th%C3%A0nh+ph%E1%BB%91+%C4%90%C3%A0+L%E1%BA%A1t,+L%C3%A2m+%C4%90%E1%BB%93ng,+Vietnam/@11.9547121,108.4401009,17z/data=!3m1!4b1!4m5!3m4!1s0x317112da2b5c0cad:0xe438c0439913bfcf!8m2!3d11.9547069!4d108.4422896">location_on</a>
+                </span>
+                <br>
+                <a href="https://linktr.ee/thgilnus">Linktr.ee</a> 
+            </div>
+        </div>
+        <div id="random-text" class="random-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p> Praesentium quam molestiae quas sequi autem excepturi ipsum.</p>
+            <p> Fuga, labore ratione reprehenderit repudiandae assumenda dolorum iusto voluptatem ex nostrum possimus minus esse veniam itaque! Suscipit quaerat, molestias totam sed nisi quas recusandae quo deserunt ab? Id tenetur sunt reiciendis molestiae? Cum, enim.</p>
+            <p> Adipisci alias et maiores hic earum cum odio obcaecati molestias. Molestias atque illum quos impedit odit dicta modi sequi eaque non, officiis ab minima! Autem, rem, a sit architecto earum dignissimos provident minus, amet tenetur quia quasi dolore eum laboriosam perspiciatis error impedit?</p>
+            <p> Dolorem quasi, perspiciatis porro, voluptatem rerum delectus sint repudiandae ipsa deserunt deleniti natus temporibus nesciunt et nihil tempora minima omnis quis distinctio officia doloribus! Consectetur nesciunt eaque nulla adipisci, quisquam corporis aperiam tenetur porro sint ab dicta molestias laboriosam ullam cum architecto ratione blanditiis?</p>
+            <p> Illum illo, quaerat iusto iste sint soluta quis dignissimos, nam, voluptates suscipit quam nostrum qui recusandae reprehenderit sed? Alias nemo, accusamus doloribus dicta debitis libero? Ullam quaerat voluptatum ut culpa esse odit dolore suscipit nihil perferendis consectetur.</p>
+            <p> Inventore fugit, dolore, deserunt voluptatum iure quaerat, tempora officiis consequuntur repudiandae ipsam animi obcaecati debitis dolorem doloribus non labore ducimus dolor nulla! Veniam, eaque quis! Voluptatem quis, vitae tempore, quisquam voluptates at modi corporis, laboriosam est libero ex facilis earum quas sed nihil.</p>
+        </div>
+        <script>
+            const element = document.getElementById("infor");
+            const element1 = document.getElementById("random-text");
+            function scrollToInfor() {
+                element.scrollIntoView(true);
+            }
+            function scrollToLorem() {
+                element1.scrollIntoView(true);
+            }
+        </script>
+    </body>
 </html>
