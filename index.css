@@ -130,3 +130,14 @@ a:hover {
 .random-text p{
     font-family: 'Alexandria', sans-serif;
 }
+
+.music{
+    text-align: center;
+    border: red solid;
+}
+.music img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    float:left;
+}
